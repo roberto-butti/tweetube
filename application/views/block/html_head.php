@@ -9,7 +9,7 @@
     <!-- STYLE -->
     <link href="<?php echo base_url("assets/bootstrap/css/bootstrap.css");?>" rel="stylesheet">
     <link href="<?php echo base_url("assets/bootstrap/css/bootstrap-responsive.css");?>" rel="stylesheet">
-    <link href="<?php echo base_url("assets/bootstrap/js/google-code-prettify/prettify.css");?>" rel="stylesheet">
+    <!-- <link href="<?php echo base_url("assets/bootstrap/js/google-code-prettify/prettify.css");?>" rel="stylesheet"> -->
     <link href="<?php echo base_url("assets/css/my.css");?>" rel="stylesheet">
     <link href="<?php echo base_url("assets/css/mb.YTVPlayer.css");?>" media="all" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>

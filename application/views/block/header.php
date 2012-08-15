@@ -24,6 +24,10 @@
         </div>
 
         <div class="btn-group pull-right">
+          <form class=" form-search">
+            <input id="txt_search_yt" type="text" class="input-medium search-query">
+            <button id="cmd_search_yt" type="submit" class="btn">Search</button>
+        </form>
         </div>
         <div class="nav-collapse collapse">
           <ul class="nav">

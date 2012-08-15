@@ -36,6 +36,8 @@
       <button <?php echo $class_default ?> onclick="$('#bgndVideo').changeMovie('http://www.youtube.com/watch?v=<?php echo $row->videoid?>')"> <?php echo $row->title?></button>
     <?php endforeach; ?>
   </div>
+
+  <div id="box_search_yt"></div>
   
   <a id="bgndVideo" href="http://www.youtube.com/watch?v=<?php echo $videoid_default?>" class="movie {opacity:.8, isBgndMovie:{width:'window',mute:false}, optimizeDisplay:true, showControls:true, ratio:'4/3', loop: true, quality:'large',addRaster:true, lightCrop:true}"><?php echo $title_default?></a>
 
