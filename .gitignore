@@ -1,0 +1,11 @@
+application/config/development/*.php
+application/config/development/!index.html
+application/config/testing/*.php
+application/config/testing/!index.html
+application/config/production/*.php
+application/config/production/!index.html
+application/logs/log-*.php
+application/logs/!index.html
+application/cache/*
+application/cache/!index.html
+user_guide
