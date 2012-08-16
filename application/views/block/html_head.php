@@ -11,7 +11,9 @@
     <link href="<?php echo base_url("assets/bootstrap/css/bootstrap-responsive.css");?>" rel="stylesheet">
     <!-- <link href="<?php echo base_url("assets/bootstrap/js/google-code-prettify/prettify.css");?>" rel="stylesheet"> -->
     <link href="<?php echo base_url("assets/css/my.css");?>" rel="stylesheet">
+    <!--
     <link href="<?php echo base_url("assets/css/mb.YTVPlayer.css");?>" media="all" rel="stylesheet" type="text/css">
+-->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <!-- ICONS -->
     <link rel="shortcut icon" href="<?php echo base_url("assets/ico/favicon.ico");?>">
@@ -21,7 +23,9 @@
     <link rel="apple-touch-icon-precomposed" href="<?php echo base_url("assets/ico/apple-touch-icon-57-precomposed.png");?>">
     <!-- JS -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!--
     <script type="text/javascript" src="<?php echo base_url("assets/inc/jquery.metadata.js");?>"></script>
     <script type="text/javascript" src="<?php echo base_url("assets/inc/jquery.mb.YTPlayer.js");?>"></script>
+    --><script type="text/javascript" src="<?php echo base_url("assets/js/app_video.js");?>"></script>
     <script type="text/javascript" src="<?php echo base_url("assets/js/app_home.js");?>"></script>
   </head>

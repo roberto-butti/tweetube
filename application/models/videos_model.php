@@ -19,12 +19,18 @@ class Videos_model extends CI_Model {
     return $query;
   }
 
-  public function insert_video($videoid, $title, $tweet, $userid) {
+  public function insert_video($videoid, $title, $tweet, $userid,  $array_ofhastag) {
+    if (is_array($array_ofhastag)) {
+      $json_hashtag= json_encode($array_ofhastag);
+    } else {
+      $json_hashtag= json_encode(array());
+    }
     $data = array(
      'videoid' => $videoid ,
      'title' => $title ,
      'tweet' => $tweet ,
-     'user_id' => $userid
+     'user_id' => $userid,
+     'json_hashtag' => $json_hashtag
     );
     $retval = $this->db->insert('videos', $data);
     if ($retval !== FALSE) {
@@ -64,7 +70,7 @@ class Videos_model extends CI_Model {
 
   public function saveVideo($videoid, $title, $tweet, $userid =0) {
     preg_match_all("/#(\\w+)/", $tweet, $array_ofhastag);
-    $id_video = $this->insert_video($videoid, $title, $tweet, $userid);
+    $id_video = $this->insert_video($videoid, $title, $tweet, $userid, $array_ofhastag[1]);
     log_message('debug',__METHOD__." video created ".$id_video);
     if ($id_video !== FALSE) {
       $this->insert_hashtags($array_ofhastag[1], $id_video, $userid);
@@ -74,7 +80,7 @@ class Videos_model extends CI_Model {
   }
 
   public function get_my_last_videos($user_id, $also_public = TRUE) {
-    $this->db->select('id, videoid, title, img, tweet');
+    $this->db->select('id, videoid, title, img, tweet, json_hashtag');
     $this->db->from('videos');
     $this->db->order_by('id DESC');
     $this->db->where('user_id', $user_id);
@@ -90,7 +96,7 @@ class Videos_model extends CI_Model {
     if ($also_public) {
       $extra_query = " OR v.user_id = 0 ";
     }
-    $sql = "SELECT v.id, v.videoid, v.title, v.img, v.tweet 
+    $sql = "SELECT v.id, v.videoid, v.title, v.img, v.tweet, v.json_hashtag
     FROM videos as v INNER JOIN hashtags as h ON v.id = h.video_id
     WHERE (v.user_id = $user_id  $extra_query)
     AND (h.hashtag = '".$this->db->escape_str($hashtag)."')

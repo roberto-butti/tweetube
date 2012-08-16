@@ -29,6 +29,10 @@ class Migration_Add_videos extends CI_Migration {
         'type' => 'VARCHAR',
         'constraint' => '250'
       ),
+      'json_hashtag' => array(
+        'type' => 'VARCHAR',
+        'constraint' => '255'
+      ),
       'user_id' => array(
         'type' => 'INT',
         'constraint' => '5'

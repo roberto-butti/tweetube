@@ -10,15 +10,15 @@
         </button>
         <a class="brand" href="/">ILTS</a>
         <div class="btn-group pull-right">
-          <button class="command" onclick="$('#bgndVideo').get(0).playVideo()"> <img src='<?php echo base_url("assets/images/play.png");?>'>
+          <button class="command" onclick="playVideo()"> <img src='<?php echo base_url("assets/images/play.png");?>'>
           </button>    
-          <button class="command" onclick="$('#bgndVideo').get(0).pauseVideo()">
+          <button class="command" onclick="pauseVideo()">
             <img src='<?php echo base_url("assets/images/pause.png");?>'>
           </button>
-          <button class="command" onclick="$('#bgndVideo').setYTPVolume(100)">
+          <button class="command" onclick="unmutevideo()">
             <img src='<?php echo base_url("assets/images/unmute.png");?>'>
           </button>
-          <button class="command" onclick="$('#bgndVideo').setYTPVolume(0)">
+          <button class="command" onclick="muteVideo()">
             <img src='<?php echo base_url("assets/images/mute.png");?>'>
           </button>
         </div>

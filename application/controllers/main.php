@@ -76,6 +76,20 @@ class Main extends CI_Controller {
 		}
 
 	}
+		public function migrateversion($version) {
+		$this->load->library('migration');
+		try {
+			if ( $this->migration->version($version) === FALSE) {
+				show_error($this->migration->error_string());
+			} else {
+				echo "Migration DONE to ".$version;
+			}
+
+		} catch (Exception $e) {
+			echo $e->getMessage();
+		}
+
+	}
 }
 
 /* End of file welcome.php */

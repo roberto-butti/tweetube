@@ -39,6 +39,7 @@
 */
 
 $route['migrate'] = 'main/migrate';
+$route['migrate/(:num)'] = 'main/migrateversion/$1';
 $route['hashtag/(:any)'] = "main/hashtag/$1";
 $route['default_controller'] = "main";
 $route['404_override'] = '';
