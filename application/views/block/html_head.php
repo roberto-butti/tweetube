@@ -23,9 +23,7 @@
     <link rel="apple-touch-icon-precomposed" href="<?php echo base_url("assets/ico/apple-touch-icon-57-precomposed.png");?>">
     <!-- JS -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <!--
-    <script type="text/javascript" src="<?php echo base_url("assets/inc/jquery.metadata.js");?>"></script>
-    <script type="text/javascript" src="<?php echo base_url("assets/inc/jquery.mb.YTPlayer.js");?>"></script>
-    --><script type="text/javascript" src="<?php echo base_url("assets/js/app_video.js");?>"></script>
+    
+    <script type="text/javascript" src="<?php echo base_url("assets/js/app_video.js");?>"></script>
     <script type="text/javascript" src="<?php echo base_url("assets/js/app_home.js");?>"></script>
   </head>
