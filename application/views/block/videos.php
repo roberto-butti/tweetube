@@ -15,8 +15,14 @@
       }
       ?>
       <button <?php echo $class_default ?> onclick="loadVideo('<?php echo $row->videoid?>')"> <?php echo $row->title?></button>
-      <div id="box_hashtag_video">
-      </div>
+      
+      <?php
+      $array= json_decode($row->json_hashtag);
+      foreach ($array as $key => $value):
+        echo "<span class='badge'>$value</span>";
+      endforeach;
+      ?>
+      
     <?php endforeach; ?>
   </div>
 

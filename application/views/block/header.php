@@ -24,8 +24,8 @@
         </div>
 
         <div class="btn-group pull-right">
-          <form class=" form-search">
-            <input id="txt_search_yt" type="text" class="input-medium search-query">
+          <form class="navbar-search">
+            <input id="txt_search_yt" type="text" class="input-medium search-query" placeholder="Search video">
             <button id="cmd_search_yt" type="submit" class="btn">Search</button>
         </form>
         </div>
