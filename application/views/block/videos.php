@@ -1,3 +1,14 @@
+  <div class="control_dashboard">
+    <a id="close_dashboard" href="#">Click to hide me too</a>
+    <script>
+    
+    $("#close_dashboard").click(function ( event ) {
+      console.log("close_dashboard");
+      event.preventDefault();
+      hide_dashboard();
+    });
+</script>
+  </div>
   <div class="console">
     <?php 
     $i= 0;

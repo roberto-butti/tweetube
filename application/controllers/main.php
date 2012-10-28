@@ -36,7 +36,7 @@ class Main extends CI_Controller {
 		$data = array();
 		$data["frontend"]= array();
 		if ($ht == "") {
-			$data["frontend"]["title"] = "Tweet Yout Tube";	
+			$data["frontend"]["title"] = "Tweet Your Tube";	
 		} else {
 			$data["frontend"]["title"] = $ht;	
 		}

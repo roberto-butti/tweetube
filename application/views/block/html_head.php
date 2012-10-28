@@ -19,9 +19,12 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url("assets/ico/apple-touch-icon-72-precomposed.png");?>">
     <link rel="apple-touch-icon-precomposed" href="<?php echo base_url("assets/ico/apple-touch-icon-57-precomposed.png");?>">
     <!-- JS EXTERNAL LIBRARIES -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url("assets/js/lib/jquery-1.8.0.min.js");?>"></script>
+    <!--
     <script type="text/javascript" src="<?php echo base_url("assets/js/lib/backbone-min.js");?>"></script>
     <script type="text/javascript" src="<?php echo base_url("assets/js/lib/underscore-min.js");?>"></script>
+    -->
     <!-- JS LIBRARIES -->
     <script type="text/javascript" src="<?php echo base_url("assets/js/app_video.js");?>"></script>
     <script type="text/javascript" src="<?php echo base_url("assets/js/app_home.js");?>"></script>
