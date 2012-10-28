@@ -7,8 +7,11 @@
     <meta name="description" content="<?php echo $frontend["title"]; ?>">
     <meta name="author" content="RB">
     <!-- CSS EXTERNAL STYLE -->
+    <!--
     <link href="<?php echo base_url("assets/bootstrap/css/bootstrap.css");?>" rel="stylesheet">
     <link href="<?php echo base_url("assets/bootstrap/css/bootstrap-responsive.css");?>" rel="stylesheet">
+    -->
+    <link href="<?php echo base_url("assets/foundation/stylesheets/foundation.min.css");?>" rel="stylesheet">
     <!-- CSS STYLE -->
     <link href="<?php echo base_url("assets/css/my.css");?>" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
@@ -19,8 +22,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url("assets/ico/apple-touch-icon-72-precomposed.png");?>">
     <link rel="apple-touch-icon-precomposed" href="<?php echo base_url("assets/ico/apple-touch-icon-57-precomposed.png");?>">
     <!-- JS EXTERNAL LIBRARIES -->
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url("assets/js/lib/jquery-1.8.0.min.js");?>"></script>
+    <!-- script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script-->
+    <script type="text/javascript" src="<?php echo base_url("assets/js/lib/jquery-1.8.2.min.js");?>"></script>
     <!--
     <script type="text/javascript" src="<?php echo base_url("assets/js/lib/backbone-min.js");?>"></script>
     <script type="text/javascript" src="<?php echo base_url("assets/js/lib/underscore-min.js");?>"></script>
