@@ -30,20 +30,20 @@
         </li>
         <li class="has-button">
           <button id="cmd_search_yt" type="button" class="radius small button">Search</button>
-          
-          
         </li>
         
-        <li>
-          <button class="command" onclick="playVideo()"> <img src='<?php echo base_url("assets/images/play.png");?>'>
+        <li class="divider">
+        </li>
+        <li class="has-button">
+          <button class="tiny button radius" onclick="playVideo()"> <img src='<?php echo base_url("assets/images/play.png");?>'>
           </button>    
-          <button class="command" onclick="pauseVideo()">
+          <button class="tiny button radius" onclick="pauseVideo()">
             <img src='<?php echo base_url("assets/images/pause.png");?>'>
           </button>
-          <button class="command" onclick="unmutevideo()">
+          <button class="tiny button radius" onclick="unmutevideo()">
             <img src='<?php echo base_url("assets/images/unmute.png");?>'>
           </button>
-          <button class="command" onclick="muteVideo()">
+          <button class="tiny button radius" onclick="muteVideo()">
             <img src='<?php echo base_url("assets/images/mute.png");?>'>
           </button>
         </li>

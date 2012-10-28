@@ -9,41 +9,20 @@
     #content{
       
       font-family: 'Ubuntu', sans-serif;
-      text-align:left;
       
       
-      margin-left:100px;
+      
+      
       background-color: #ffffff;
       opacity: .9;
+
+
+-moz-border-radius: 1em 4em 1em 4em;
+border-radius: 1em 4em 1em 4em;
     }
 
     .movie{
       display:none;
-    }
-
-    .dida{
-      position:fixed;
-      bottom:0;
-      font: 12px/14px Arial, sans-serif;
-      color:white;
-      padding:10px;
-    }
-
-    button{
-      display:block;
-      background:transparent;
-      border:none;
-      color:white;
-      font-size:18px;
-      cursor:pointer;
-    }
-
-    button.command{
-      display:inline-block;
-    }
-
-    button:hover, button.sel{
-      color: #ffcc00;
     }
 
 
