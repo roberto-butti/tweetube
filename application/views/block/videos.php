@@ -1,15 +1,25 @@
-  <div class="control_dashboard">
+<div class="row">
+  <div class="four columns offset-by-eight">
     <a id="close_dashboard" href="#">Click to hide me too</a>
     <script>
-    
     $("#close_dashboard").click(function ( event ) {
       console.log("close_dashboard");
       event.preventDefault();
       hide_dashboard();
     });
-</script>
+    </script>
   </div>
-  <div class="console">
+</div>
+<div class="row" >  
+  <div class="twelve columns">
+<dl class="tabs">
+  <dd class="active"><a href="#tabVideos">Videos</a></dd>
+  <dd><a href="#tabSearch">Founded on youtube</a></dd>
+  <dd class="hide-for-small"><a href="#simple3">Simple Tab 3</a></dd>
+</dl>
+<ul class="tabs-content">
+  <li class="active" id="tabVideosTab">
+    <div class="console">
     <?php 
     $i= 0;
     $videoid_default = "8CtjhWhw2I8";
@@ -35,7 +45,16 @@
       ?>
       
     <?php endforeach; ?>
-  </div>
+    </div>
+  </li>
+  <li  id="tabSearchTab">
+    <div id="box_search_yt"></div>
+  </li>
 
-  <div id="box_search_yt"></div>
-  <div id="video_root" data-value="<?php echo $videoid_default?>"></div> 
+    
+  </div>
+  
+
+  
+  
+</div>

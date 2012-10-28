@@ -1,17 +1,20 @@
 
     body{
       background: url("assets/images/06.jpg");
+      background-color: #000000;
       font-family: 'Ubuntu', sans-serif;
       margin:0;
     }
 
     #content{
-      color:white;
+      
       font-family: 'Ubuntu', sans-serif;
       text-align:left;
-      padding-top:75px;
-      text-shadow:#666666 2px 2px 4px;
+      
+      
       margin-left:100px;
+      background-color: #ffffff;
+      opacity: .9;
     }
 
     .movie{

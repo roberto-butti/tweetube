@@ -7,10 +7,6 @@
     <meta name="description" content="<?php echo $frontend["title"]; ?>">
     <meta name="author" content="RB">
     <!-- CSS EXTERNAL STYLE -->
-    <!--
-    <link href="<?php echo base_url("assets/bootstrap/css/bootstrap.css");?>" rel="stylesheet">
-    <link href="<?php echo base_url("assets/bootstrap/css/bootstrap-responsive.css");?>" rel="stylesheet">
-    -->
     <link href="<?php echo base_url("assets/foundation/stylesheets/foundation.min.css");?>" rel="stylesheet">
     <!-- CSS STYLE -->
     <link href="<?php echo base_url("assets/css/my.css");?>" rel="stylesheet">

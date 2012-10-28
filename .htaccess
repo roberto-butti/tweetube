@@ -23,3 +23,5 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ index.php/$1 [L]
 </IfModule>
+SetEnv CI_ENV "development"
+

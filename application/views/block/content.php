@@ -1,7 +1,9 @@
-<div id="content" class="container">
-  <h1>I Love These Songs: here your videos :)</h1>
+<div id="content" class="row">
+  <div class="twelve columns">
+    <h1>I Love These Songs: here your videos :)</h1>
 
-  <?php $this->load->view('block/videos'); ?>
+    <?php $this->load->view('block/videos'); ?>
+  </div>
 </div>
 
 <div id="active-teaser">
